@@ -5,7 +5,6 @@ import ImgNode from '../../assets/node-logo-3d.png'
 import ImgTw from '../../assets/tw-logo-3d.png'
 import ImgMySql from '../../assets/mysql-logo-3d.png'
 import ImgGit from '../../assets/git-logo-3d.png'
-import ImgConexion from '../../assets/comunidad-png.png'
 
 
 const Modul = () => {

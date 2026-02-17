@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Logo from '../../assets/icono.png'
-import { Link } from 'react-router-dom'
 
 const navbarlinks = [
     {
@@ -26,7 +25,7 @@ const navbarRedes = [
         id:1,
         title:"Github",
         link:"https://github.com/adrianrivero21",
-        icon:'bi-github'
+        icon:'bi bi-github'
     },
     {
         id:2,
@@ -99,12 +98,12 @@ const Navbar = () => {
                 <ul className='flex sm:space-x-50 space-x-4'>
                     {navbarlinks.map((link)=>(
                         <li key={link.id}>
-                            <Link 
+                            <a
                             target='__blank'
                             className='sm:text-lg text-sm hover:text-yellow-200 transition-transform 
                             hover:scale-110 transform inline-block duration-300'
                             href={link.link}>
-                            {link.title}</Link>
+                            {link.title}</a>
                         </li>
                     ))}
                 </ul>
@@ -138,12 +137,12 @@ const Navbar = () => {
                 <ul className='flex flex-col px-4 py-2'>
                     {navbarlinks.map((link)=>(
                         <li key={link.id} className='py-2 text-center'>
-                            <Link
+                            <a
                             className='hover:text-yellow-200'
                             onClick={()=>setIsOpen(false)}
                             target='__blank'
                             href={link.link}>
-                            {link.title}</Link>
+                            {link.title}</a>
                         </li>
                     ))}
                 </ul>
