@@ -100,7 +100,7 @@ const Navbar = () => {
                         <li key={link.id}>
                             <a
                             target='__blank'
-                            className='sm:text-lg text-sm hover:text-yellow-200 transition-transform 
+                            className='sm:text-lg text-sm hover:text-red-500 transition-transform 
                             hover:scale-110 transform inline-block duration-300'
                             href={link.link}>
                             {link.title}</a>
@@ -120,7 +120,7 @@ const Navbar = () => {
                             href={link.link}>
 
                                 <i
-                                className={`${link.icon} sm:text-2xl text-lg hover:text-yellow-200 transition-all duration-300 `}
+                                className={`${link.icon} sm:text-2xl text-lg hover:text-red-500 transition-all duration-300 `}
                                 >
 
                                 </i>
