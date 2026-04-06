@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Logo from '../../assets/icono.png'
+import { NavLink } from 'react-router-dom'
 
 const navbarlinks = [
     {
@@ -53,7 +54,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className='fixed top-0 left-0 w-full bg-grey bg-opacity-30 backdrop-blur-md z-50'>
+    <nav className='fixed top-0 left-0 w-full bg-white shadow-md z-50'>
         <div className='flex justify-between items-center sm:px-10 px-4 py-4'>
 
             <div>
@@ -98,12 +99,12 @@ const Navbar = () => {
                 <ul className='flex sm:space-x-50 space-x-4'>
                     {navbarlinks.map((link)=>(
                         <li key={link.id}>
-                            <a
-                            target='__blank'
+                            <NavLink
                             className='sm:text-lg text-sm hover:text-red-500 transition-transform 
                             hover:scale-110 transform inline-block duration-300'
-                            href={link.link}>
-                            {link.title}</a>
+                            to={link.to}>
+                            {link.title}
+                            </NavLink>
                         </li>
                     ))}
                 </ul>
@@ -137,12 +138,12 @@ const Navbar = () => {
                 <ul className='flex flex-col px-4 py-2'>
                     {navbarlinks.map((link)=>(
                         <li key={link.id} className='py-2 text-center'>
-                            <a
-                            className='hover:text-yellow-200'
+                            <NavLink
+                            className='hover:text-red-500'
                             onClick={()=>setIsOpen(false)}
-                            target='__blank'
-                            href={link.link}>
-                            {link.title}</a>
+                            to={link.to}>
+                            {link.title}
+                            </NavLink>
                         </li>
                     ))}
                 </ul>
@@ -156,7 +157,7 @@ const Navbar = () => {
                             onClick={()=>setIsOpen(false)}
                             href={link.link}>
                                 <i
-                                className={`${link.icon} text-lg hover:text-yellow-200`}
+                                className={`${link.icon} text-lg hover:text-red-500`}
                                 >
 
                                 </i>

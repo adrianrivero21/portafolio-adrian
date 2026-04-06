@@ -47,12 +47,12 @@ const Modul = () => {
         <a className='font-semibold '>Crea una comunidad a tu marca</a>
         <p className='font-semibold px-10' style={{ fontSize: '20px', color: '#929292ff'}}>Conecta con tus clientes y crece con tu negocio.</p>
 
-        <button class="m-8 group relative inline-block text-sm font-medium text-white btn-sm md:btn-md lg:btn-lg" href="https://www.linkedin.com/in/adrian-josue-rivero-navarro-1a25901b6/">
+        <a class="m-8 group relative inline-block text-sm font-medium text-white btn-sm md:btn-md lg:btn-lg" href="https://www.linkedin.com/in/adrian-josue-rivero-navarro-1a25901b6/">
         <span class="absolute inset-0 border border-red-600"></span>
         <span class=" block border border-red-600 bg-red-600 px-14 py-5 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
          Empieza Ahora!
          </span>
-        </button>
+        </a>
         
       
 

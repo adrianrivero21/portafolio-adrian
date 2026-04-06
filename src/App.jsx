@@ -1,29 +1,31 @@
-import { useState } from 'react'
-import "./index.css"
-import Footer from "./components/Footer/Footer"
+import "./index.css";
+import { Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Project from './pages/Project';
+import NavBarLink from "./components/NavBarLink/NavBarLink";
 import Navbar from "./components/Navbar/Navbar"
-import Hero from "./components/Hero/Hero"
-import Text from './components/Text/Text'
-import Modul from "./components/Modul/Modul"
 
-function App() {
+
+const App = () => {
   
 
   return (
     <>
-      <div>
 
-        <Navbar />
-        <Hero />
-        <Text />
-        <Modul />
-        <Footer />
+    <NavBarLink />
+    <Navbar />
+
+      <Routes>
         
-        
-      </div>
+        <Route path="/" element={<Home />} />
+        <Route path="/project" element={<Project />} />    
+        <Route path="/contact" element={<Contact />} />
+
+      </Routes>
        
     </>
-  )
-}
+  );
+};
 
 export default App
