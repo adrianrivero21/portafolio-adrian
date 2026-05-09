@@ -1,9 +1,10 @@
 import React from 'react'
+import Text from '../components/Text/Text'
 
 function Project() {
   return (
     <div>
-        Project
+        <Text />
     </div>
   )
 }

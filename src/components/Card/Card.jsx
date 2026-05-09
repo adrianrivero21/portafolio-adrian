@@ -1,6 +1,6 @@
 import React from 'react'
-import Img from '../../assets/img-app-3.png'
-import ImgLap from '../../assets/app-laptop-2.png'
+import Img from '../../assets/img-app.png'
+import ImgLap from '../../assets/app-laptop.png'
 
 
 
@@ -9,7 +9,7 @@ const Card = () => {
    
 
   return (
-    <section >
+    <div >
 
         <div className='text-center m-4 sm:m-6 lg:mx-80 lg:my-15 '>
 
@@ -43,8 +43,8 @@ const Card = () => {
   
 
 
-    </section>
-  )
-}
+    </div>
+  );
+};
 
 export default Card
